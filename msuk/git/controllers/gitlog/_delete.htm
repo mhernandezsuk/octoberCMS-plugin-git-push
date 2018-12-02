@@ -1,0 +1,42 @@
+<div class="modal-dialog">
+	<form class="form-elements" role="form">
+	    <div class="modal-content">
+	        <div class="modal-header">
+	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	            <h4 class="modal-title"><?= e(trans('msuk.git::lang.plugin.comment')) ?></h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="form-group text-field span-full is-required">
+			        <textarea id="inp-comentario" name="Post[comment]" class="form-control size-small field-textarea" required></textarea>
+			    </div>
+	        </div>
+	        <div class="modal-footer">
+	        	<div class="form-group text-field span-full p-b-0">
+	                <button type="button" class="btn btn-default" data-dismiss="popup">
+				        <?= e(trans('backend::lang.form.close')) ?>
+				    </button>
+				    <button id="btnSubmit" type="submit" onclick="$(this).attr('data-request-data','extra: $(\'#post-form\').serialize()')" class="btn btn-default extra" data-dismiss="modal" data-request="onSendCommentGit">
+				        <?= e(trans('backend::lang.form.save')) ?>
+				    </button>
+				</div>
+	        </div>
+	    </div>
+	</form>
+</div>
+
+
+<script type="text/javascript">
+	$("#btnSubmit").attr("disabled","disabled");
+
+	$("#inp-comentario").keyup(function()
+	{
+		if($(this).val().length > 3)
+		{
+			$("#btnSubmit").removeAttr('disabled');
+		}else
+		{
+			$("#btnSubmit").attr("disabled","disabled");
+		}
+	})
+
+</script>

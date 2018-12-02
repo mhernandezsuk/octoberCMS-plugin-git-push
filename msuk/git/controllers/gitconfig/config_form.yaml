@@ -1,0 +1,10 @@
+name: GitConfig
+form: $/msuk/git/models/gitconfig/fields.yaml
+modelClass: msuk\Git\Models\GitConfig
+defaultRedirect: msuk/git/gitconfig
+create:
+    redirect: 'msuk/git/gitconfig/update/:id'
+    redirectClose: msuk/git/gitconfig
+update:
+    redirect: msuk/git/gitconfig
+    redirectClose: msuk/git/gitconfig

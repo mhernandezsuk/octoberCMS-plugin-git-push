@@ -1,0 +1,12 @@
+title: GitConfig
+modelClass: msuk\Git\Models\GitConfig
+list: $/msuk/git/models/gitconfig/columns.yaml
+recordUrl: 'msuk/git/gitconfig/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

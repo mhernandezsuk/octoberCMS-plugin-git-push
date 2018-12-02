@@ -1,0 +1,9 @@
+columns:
+    user_id:
+        label: User ID
+        type: number
+        clickable: false
+    comment:
+        label: Comment
+        type: text
+        clickable: false

@@ -1,0 +1,15 @@
+fields:
+    id:
+        label: ID
+        oc.commentPosition: ''
+        span: auto
+        type: number
+        attributes:
+            disabled: true
+    comment:
+        label: Comment
+        span: auto
+        oc.commentPosition: ''
+        type: text
+        attributes:
+            disabled: true

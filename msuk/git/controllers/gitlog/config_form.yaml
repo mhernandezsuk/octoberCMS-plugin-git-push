@@ -1,0 +1,10 @@
+name: GitLog
+form: $/msuk/git/models/gitlog/fields.yaml
+modelClass: Msuk\Git\Models\GitLog
+defaultRedirect: msuk/git/gitlog
+create:
+    redirect: 'msuk/git/gitlog/update/:id'
+    redirectClose: msuk/git/gitlog
+update:
+    redirect: msuk/git/gitlog
+    redirectClose: msuk/git/gitlog

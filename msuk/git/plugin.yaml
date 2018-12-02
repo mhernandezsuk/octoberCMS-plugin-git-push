@@ -1,0 +1,11 @@
+plugin:
+    name: 'msuk.git::lang.plugin.name'
+    description: 'msuk.git::lang.plugin.description'
+    author: Martin H Suk
+    icon: oc-icon-file
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Push'
+        url: msuk/git/gitlog
+        icon: icon-file
