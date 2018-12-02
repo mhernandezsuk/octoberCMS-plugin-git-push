@@ -1,3 +1,4 @@
-1.0.1:
+1.0.0:
     - 'Initialize plugin.'
-
+    - 'Created table ceibal_git_log'
+    - builder_table_create_ceibal_git_log.php
